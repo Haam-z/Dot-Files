@@ -1,0 +1,69 @@
+#Alacritty:
+
+env:
+  TERM: alacritty
+
+window:
+  padding:
+    x: 10
+    y: 10
+
+    dynamic_padding:  true
+    decoration: none
+
+font:
+  normal:
+    family: Fira Code
+
+  bold:
+    family: Fira Code
+
+  italic:
+    family: Fira Code
+
+  bold_italic:
+    family: Fira Code
+  size: 10
+
+colors:
+  # Default colors
+  primary:
+    background: '0x01060b'
+    foreground: '0xd1d1d1'
+
+  # Normal colors
+  normal:
+    black:   '0x1d1c21'
+    red:     '0xf24b7a'
+    green:   '0x48e860'
+    yellow:  '0xfacc4d'
+    blue:    '0x4dacfa'
+    magenta: '0xf54cb1'
+    cyan:    '0x49d2eb'
+    white:   '0xc1c7d4'
+
+  # Bright colors
+  bright:
+    black:   '0x3b3b3b'
+    red:     '0xf28fad'
+    green:   '0xabe9b3'
+    yellow:  '0xfae3b0'
+    blue:    '0x96cdfb'
+    magenta: '0xf5c2e7'
+    cyan:    '0x89dceb'
+    white:   '0xd9e0ee'
+
+# cursor:
+#   style: Underline
+
+#   unfocused_hollow: false
+
+live_config_reload: true
+                 
+key_bindings:
+
+  - { key: Key0, mods: Control, action: ResetFontSize }
+
+  - { key: Equals, mods: Control, action: IncreaseFontSize }
+
+  - { key: Minus, mods: Control, action: DecreaseFontSize }
