@@ -47,10 +47,10 @@ myBorderWidth :: Dimension
 myBorderWidth =  1          -- Sets border width for windows
 
 myNormColor :: String       -- Border color of normal windows
-myNormColor   = "#01060b"
+myNormColor   = "#1a1b26"
 
 myFocusColor :: String      -- Border color of focused windows
-myFocusColor  = "#1C2636"
+myFocusColor  = "#a9b1d6"
 
 myEmacs :: String
 myEmacs  = "emacsclient -c -a 'emacs'"
@@ -71,7 +71,7 @@ myClipBoard :: String
 myClipBoard = "clipmenu"
 
 
-myWorkspaces    = ["I", "II", "III", "IV", "V"]
+myWorkspaces    = ["I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"]
 
 addNETSupported :: Atom -> X ()
 addNETSupported x   = withDisplay $ \dpy -> do
@@ -108,11 +108,13 @@ myLayout = avoidStruts(tiled ||| Mirror tiled ||| Full)
 myKeys :: [(String, X ())]
 myKeys =
         [ ("M-t",                       spawn myTerminal )
-        , ("M-f g",                     spawn myFileManager)
-        , ("M-f t",                     spawn myTerminalFileManager)
+        , ("M-f",                       spawn myFileManager)
         , ("M-b",                       spawn myBrowser)
         , ("M-e",                       spawn myEmacs)
-        , ("M-d",                     spawn myLauncher )
+        , ("M-d",                       spawn myLauncher )
+        , ("M-c",                       spawn "discord" )
+        , ("M-s",                       spawn "spotify")
+        , ("M-S-s",                     spawn "steam")
         , ("M-S-d",                     spawn myClipBoard)
         , ("<XF86AudioPlay>",           spawn "playerctl play-pause")
         , ("<XF86AudioPrev>",           spawn "playerctl previous")

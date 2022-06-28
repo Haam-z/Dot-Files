@@ -23,35 +23,50 @@ font:
 
   bold_italic:
     family: Fira Code
-  size: 10
+  size: 11
 
 colors:
-  # Default colors
   primary:
-    background: '0x01060b'
-    foreground: '0xd1d1d1'
-
-  # Normal colors
+    background: '0x1a1b26'
+    foreground: '0xa9b1d6'
   normal:
-    black:   '0x1d1c21'
-    red:     '0xf24b7a'
-    green:   '0x48e860'
-    yellow:  '0xfacc4d'
-    blue:    '0x4dacfa'
-    magenta: '0xf54cb1'
-    cyan:    '0x49d2eb'
-    white:   '0xc1c7d4'
-
-  # Bright colors
+    black:   '0x32344a'
+    red:     '0xf7768e'
+    green:   '0x9ece6a'
+    yellow:  '0xe0af68'
+    blue:    '0x7aa2f7'
+    magenta: '0xad8ee6'
+    cyan:    '0x449dab'
+    white:   '0x787c99'
   bright:
-    black:   '0x3b3b3b'
-    red:     '0xf28fad'
-    green:   '0xabe9b3'
-    yellow:  '0xfae3b0'
-    blue:    '0x96cdfb'
-    magenta: '0xf5c2e7'
-    cyan:    '0x89dceb'
-    white:   '0xd9e0ee'
+    black:   '0x444b6a'
+    red:     '0xff7a93'
+    green:   '0xb9f27c'
+    yellow:  '0xff9e64'
+    blue:    '0x7da6ff'
+    magenta: '0xbb9af7'
+    cyan:    '0x0db9d7'
+    white:   '0xacb0d0'
+
+
+    # Normal colors
+
+    # Bright colors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 # cursor:
 #   style: Underline

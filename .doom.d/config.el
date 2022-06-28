@@ -37,3 +37,6 @@
               bidi-paragraph-direction 'left-to-right)
 
 (add-hook 'pdf-tools-enabled-hook 'pdf-view-midnight-minor-mode)
+(map! :leader
+      :desc "Get me in ranger"
+      "e" #'ranger)
